@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_details",
+  "info": {
+    "singularName": "contact-detail",
+    "pluralName": "contact-details",
+    "displayName": "Contact Detail",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true,
+    "privateAttributes": ["id", "created_at", "updated_at"],
+    "populateCreatorFields": false,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    },
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "address": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bus": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "train": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "car": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contactmobile": {
+      "type": "string"
+    },
+    "partnershipmobile": {
+      "type": "string"
+    },
+    "contactemail": {
+      "type": "email"
+    },
+    "partnershipemail": {
+      "type": "email"
+    }
+  }
+}

@@ -10,10 +10,22 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    },
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "siteName": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "required": true
     },
     "favicon": {
@@ -28,12 +40,27 @@
     },
     "siteDescription": {
       "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "required": true
     },
     "defaultSeo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "mainVideo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

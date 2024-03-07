@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exhibitions",
+  "info": {
+    "singularName": "exhibition",
+    "pluralName": "exhibitions",
+    "displayName": "Exhibitions",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true,
+    "privateAttributes": [
+      "id",
+      "created_at",
+      "updated_at"
+    ],
+    "populateCreatorFields": false,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    },
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "default": "",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "default": "",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "min": 0,
+      "max": 10000000,
+      "default": 0,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "enum": [
+        "Permanent",
+        "Permanent + special",
+        "Event"
+      ],
+      "default": "Permanent"
+    },
+    "startDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "endDate": {
+      "type": "datetime",
+      "required": false
+    },
+    "simplyBookServiceId": {
+      "type": "integer",
+      "min": 0,
+      "max": 100000,
+      "default": 1,
+      "required": true
+    },
+    "simplyBookServiceProviderId": {
+      "type": "integer",
+      "min": 0,
+      "max": 100000,
+      "default": 1,
+      "required": true
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "exhibition"
+    }
+  }
+}
