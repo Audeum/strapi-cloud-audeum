@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_provenances",
+  "info": {
+    "name": "Provenance",
+    "icon": "allergies",
+    "displayName": "Provenance",
+    "description": "출처/소장경위"
+  },
+  "options": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "min": 1000,
+      "max": 2100,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    }
+  }
+}
