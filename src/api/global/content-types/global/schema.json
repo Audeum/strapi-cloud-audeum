@@ -19,15 +19,6 @@
     }
   },
   "attributes": {
-    "siteName": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
     "favicon": {
       "type": "media",
       "multiple": false,
@@ -38,8 +29,18 @@
         "videos"
       ]
     },
-    "siteDescription": {
-      "type": "text",
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "homeNotice": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.home-notice"
+    },
+    "infoOpen": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -47,10 +48,14 @@
       },
       "required": true
     },
-    "defaultSeo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
+    "infoClosed": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "mainVideo": {
       "type": "media",

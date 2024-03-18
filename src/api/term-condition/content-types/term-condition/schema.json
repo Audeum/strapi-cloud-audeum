@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terms-conditions",
+  "info": {
+    "singularName": "term-condition",
+    "pluralName": "terms-conditions",
+    "displayName": "Terms and Conditions"
+  },
+  "options": {
+    "timestamps": true,
+    "privateAttributes": ["id", "created_at", "updated_at"],
+    "populateCreatorFields": false,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    },
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "version": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.rich-text"
+    }
+  }
+}

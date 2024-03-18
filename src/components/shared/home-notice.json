@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_home_notice",
+  "info": {
+    "name": "Home Notice",
+    "icon": "allergies",
+    "displayName": "Home Notice",
+    "description": "홈 화면 공지사항"
+  },
+  "options": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "category": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "enum": [
+        "Default",
+        "Closed",
+        "Custom"
+      ],
+      "default": "Default"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.rich-text"
+    }
+  }
+}
