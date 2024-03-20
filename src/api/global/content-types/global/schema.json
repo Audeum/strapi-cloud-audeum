@@ -39,24 +39,6 @@
       "repeatable": true,
       "component": "shared.home-notice"
     },
-    "infoOpen": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
-    "infoClosed": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
     "mainVideo": {
       "type": "media",
       "multiple": true,
