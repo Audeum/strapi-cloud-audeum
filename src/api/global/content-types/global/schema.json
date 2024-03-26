@@ -34,10 +34,28 @@
       "repeatable": false,
       "component": "shared.seo"
     },
+    "enableCustomNotice": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
     "homeNotice": {
       "type": "component",
       "repeatable": true,
       "component": "shared.home-notice"
+    },
+    "enablePayment": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "mainVideo": {
       "type": "media",

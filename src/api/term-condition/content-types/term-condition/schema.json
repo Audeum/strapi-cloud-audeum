@@ -34,6 +34,14 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.rich-text"
+    },
+    "download": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
     }
   }
 }
